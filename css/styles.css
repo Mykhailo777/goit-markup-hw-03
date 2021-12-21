@@ -1,0 +1,253 @@
+/* основной цвет текста #757575 */
+/* вторичный цыет текста #212121; */
+
+/* белый #FFFFFF; */
+
+/*текст футера rgba(255, 255, 255, 0.6); */
+
+/* цвет текста логотипа #000000; #2196F3; */
+/* акцент #2196F3; */
+/* фон футера #2F303A */
+/* вторичный цвет фона #F5F4FA */
+
+:root {
+  --primery-tex-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --logo-color: #000000;
+  --bg-color: #ffffff;
+  --primery-bg-color: #2f303a;
+  --secondary-bg-color: #f5f4fa;
+  --white-color: #ffffff;
+  --bg-button-color: #188ce8;
+  --bg-prbutton-color: #f5f4fa;
+  --footer-tx-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  color: var(--primery-tex-color);
+  background-color: #ffffff;
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/* Logo */
+
+.logo,
+.link,
+.link.current {
+  text-decoration: none;
+}
+
+.logo {
+  color: var(--logo-color);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.logo-web {
+  color: var(--accent-color);
+}
+
+/* Site nav */
+.site-nav {
+  list-style: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* Contacts */
+.contacts {
+  list-style: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contacts .link {
+  color: var(--primery-tex-color);
+}
+
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent-color);
+}
+
+/* INDEX */
+
+/* Hero */
+.hero {
+  background-color: var(--primery-bg-color);
+}
+
+.hero-title {
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Button */
+.button {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.button.primary {
+  background-color: var(--bg-prbutton-color);
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button.primary:hover,
+.button.primary:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--bg-button-color);
+}
+
+/* Features */
+.features {
+  list-style: none;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.feature-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* Work */
+.work-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* Team */
+.team {
+  background-color: var(--secondary-bg-color);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.team-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.team .list-title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19px;
+  text-align: center;
+}
+
+/* List */
+.list {
+  list-style: none;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--primery-bg-color);
+}
+
+.footer .list {
+  font-style: normal;
+}
+
+.footer-logo {
+  color: var(--white-color);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.address,
+.footer-link,
+.footer-logo {
+  text-decoration: none;
+}
+
+.address {
+  color: var(--white-color);
+}
+
+.footer-link {
+  color: var(--footer-tx-color);
+}
+
+.address:hover,
+.address:focus {
+  color: var(--accent-color);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
+}
+
+/* PORTFOLIO */
+.inventory {
+  color: var(--primery-tex-color);
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.portfolio-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
